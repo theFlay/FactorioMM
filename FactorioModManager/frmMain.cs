@@ -18,6 +18,8 @@ namespace FactorioModManager
 {
     public partial class frmMain : Form
     {
+        //Default User Data
+        #region
         // ╲⎝⧹Flayer⧸⎠╱
         //http://mods.factorio.com/api/mods?page_size=max&namelist=aai-programmable-structures
         Modlist modList;
@@ -32,9 +34,8 @@ namespace FactorioModManager
         string settingToken = "token";
         string settingOnlyEnabled = "onlyEnabled";
         string tempDownloadName = "download";
-
         string modListFilename = "mod-list.json";
-
+        #endregion
         Mod currentMod;
         string currentModUrl;
         string currentModFilename;
@@ -50,23 +51,32 @@ namespace FactorioModManager
 
         private void WebClient_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
+            //Downloads current mod
+            #region
             LogWriteLine(" done.");
             InstallDownloadedMod();
             currentModIndex++;
             ProcessNextModUpdate();
+            #endregion
         }
         private void InstallDownloadedMod()
         {
+            //Installs the current mod
+            #region
             LogWriteLine("Installing " + currentModFilename);
             File.Move(tempDownloadName, Path.Combine(txtbModsDirectory.Text,currentModFilename));
+            #endregion
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            //Sets user details as default if they cant be found
+            #region
             txtbModHost.Text = ConfigurationManager.AppSettings[settingModHost] ?? defaultModHost;
             txtbUsername.Text = ConfigurationManager.AppSettings[settingUsername] ?? defaultUsername;
             txtbToken.Text = ConfigurationManager.AppSettings[settingToken] ?? defaultToken;
             cbUpdateOnlyEnabled.Checked = bool.Parse(ConfigurationManager.AppSettings[settingOnlyEnabled] ?? defaultOnlyEnabled);
+            #endregion
         }
 
         private void btnRestoreDefaults_Click(object sender, EventArgs e)
@@ -133,7 +143,6 @@ namespace FactorioModManager
         {
             Console.WriteLine(txtbModsDirectory.Text);
             txtbActionLog.Clear();
-            //btnUpdateMods.Enabled = true;
             LoadModList();
         }
         
@@ -181,32 +190,6 @@ namespace FactorioModManager
                     serializer.Serialize(writer, modList);
         }
 
-        /*private void button1_Click(object sender, EventArgs e)
-        {
-            foreach (var mod in modList.mods)
-            {
-                Console.WriteLine("{0} {1}",mod.name, mod.enabled);
-            }
-        }*/
-
-        /*private void button2_Click(object sender, EventArgs e)
-        {
-            string[] fileList = Directory.GetFiles(txtbModsDirectory.Text);
-            Mod m = ((Mod)clbModList.SelectedItem);
-            Console.WriteLine(txtbModHost.Text);
-            //Console.WriteLine(webClient.DownloadString("/api/mods?page_size=max&namelist=" + m.name));
-            string modData = webClient.DownloadString("/api/mods?q=" + m.name);
-            dynamic modjsonData = JObject.Parse(modData);
-            Console.WriteLine(modjsonData.results[0].releases[0]);
-            JObject jModData = JObject.Parse(modData);
-            JObject res = (JObject)jModData["results"][0];
-            JArray release = (JArray)res["releases"];
-            Console.WriteLine(res["owner"].ToString());
-            string download = release[0]["download_url"].ToString();
-            string file = release[0]["file_name"].ToString();
-            webClient.DownloadFileAsync(new Uri(txtbModHost.Text + download + "?username="+txtbUsername.Text+"&token="+txtbToken.Text),file);
-        }*/
-
         private void BeginModDownload(string d,string f)
         {
             Uri fileUri = new Uri(txtbModHost.Text + d + "?username=" + txtbUsername.Text + "&token=" + txtbToken.Text);
@@ -220,7 +203,6 @@ namespace FactorioModManager
                 updateInProgress = true;
                 currentModIndex = 0;
                 txtbActionLog.Clear();
-                //btnUpdateMods.Enabled = false;
                 int enabledCount = 0;
                 foreach (var m in modList.mods)
                     if (m.enabled)
@@ -234,6 +216,13 @@ namespace FactorioModManager
                     LogWriteLine("Updating ALL (" + (modList.mods.Count - 1) + ") mods.");
                 }
                 ProcessNextModUpdate();
+            }
+            else
+            {
+                MessageBox.Show("Upadte already running");
+                statusStrip1.Text = "Updating Mods";
+                statusStrip1.Refresh();
+
             }
         }
 
@@ -258,7 +247,6 @@ namespace FactorioModManager
             if (currentModIndex == modList.mods.Count)
             {
                 LogWriteLine("Updating COMPLETED.");
-                //btnUpdateMods.Enabled = true;
                 updateInProgress = false;
             }
         }
@@ -349,16 +337,20 @@ namespace FactorioModManager
 
         private void btnEnableAll_Click(object sender, EventArgs e)
         {
+            //Enables all mods
+            #region
             foreach (var m in modList.mods)
                 m.enabled = true;
             WriteModListJson();
             txtbActionLog.Clear();
             LoadModList();
-
+            #endregion
         }
 
         private void btnDisableAll_Click(object sender, EventArgs e)
         {
+            //Disables all mods
+            #region
             foreach (var m in modList.mods)
             {
                 if (m.name != "base")
@@ -367,7 +359,23 @@ namespace FactorioModManager
             WriteModListJson();
             txtbActionLog.Clear();
             LoadModList();
+            #endregion
+        }
 
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void btnFetchUser_Click(object sender, EventArgs e)
+        {
+            //Gets Username and token from appdata
+            #region
+            var fileName = Path.Combine(Environment.GetFolderPath(
+            Environment.SpecialFolder.ApplicationData), "\\Roaming\\Factorioplayer-data.json");
+            defaultUsername = "Flayer1993";
+            defaultToken = "a5945b790ad7a91265610b2247c743";
+            #endregion
         }
     }
 }

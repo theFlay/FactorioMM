@@ -45,6 +45,10 @@
             this.btnUpdateMods = new System.Windows.Forms.Button();
             this.btnEnableAll = new System.Windows.Forms.Button();
             this.btnDisableAll = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.btnLaunch = new System.Windows.Forms.Button();
+            this.btnResetData = new System.Windows.Forms.Button();
+            this.btnFetchUser = new System.Windows.Forms.Button();
             this.pSettings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +57,7 @@
             this.clbModList.FormattingEnabled = true;
             this.clbModList.Location = new System.Drawing.Point(12, 124);
             this.clbModList.Name = "clbModList";
-            this.clbModList.Size = new System.Drawing.Size(212, 289);
+            this.clbModList.Size = new System.Drawing.Size(212, 604);
             this.clbModList.TabIndex = 14;
             this.clbModList.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clbModList_ItemCheck);
             // 
@@ -62,13 +66,14 @@
             this.txtbModsDirectory.Enabled = false;
             this.txtbModsDirectory.Location = new System.Drawing.Point(96, 98);
             this.txtbModsDirectory.Name = "txtbModsDirectory";
-            this.txtbModsDirectory.Size = new System.Drawing.Size(619, 20);
+            this.txtbModsDirectory.Size = new System.Drawing.Size(550, 20);
             this.txtbModsDirectory.TabIndex = 15;
             this.txtbModsDirectory.TextChanged += new System.EventHandler(this.txtbModsDirectory_TextChanged);
             // 
             // pSettings
             // 
             this.pSettings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pSettings.Controls.Add(this.btnFetchUser);
             this.pSettings.Controls.Add(this.cbUpdateOnlyEnabled);
             this.pSettings.Controls.Add(this.btnRestoreDefaults);
             this.pSettings.Controls.Add(this.lblToken);
@@ -95,7 +100,7 @@
             // 
             // btnRestoreDefaults
             // 
-            this.btnRestoreDefaults.Location = new System.Drawing.Point(639, 30);
+            this.btnRestoreDefaults.Location = new System.Drawing.Point(639, 29);
             this.btnRestoreDefaults.Name = "btnRestoreDefaults";
             this.btnRestoreDefaults.Size = new System.Drawing.Size(89, 46);
             this.btnRestoreDefaults.TabIndex = 20;
@@ -116,7 +121,7 @@
             // 
             this.txtbToken.Location = new System.Drawing.Point(75, 55);
             this.txtbToken.Name = "txtbToken";
-            this.txtbToken.Size = new System.Drawing.Size(558, 20);
+            this.txtbToken.Size = new System.Drawing.Size(495, 20);
             this.txtbToken.TabIndex = 18;
             this.txtbToken.TextChanged += new System.EventHandler(this.txtbToken_TextChanged);
             // 
@@ -133,7 +138,7 @@
             // 
             this.txtbUsername.Location = new System.Drawing.Point(75, 29);
             this.txtbUsername.Name = "txtbUsername";
-            this.txtbUsername.Size = new System.Drawing.Size(558, 20);
+            this.txtbUsername.Size = new System.Drawing.Size(495, 20);
             this.txtbUsername.TabIndex = 16;
             this.txtbUsername.TextChanged += new System.EventHandler(this.txtbUsername_TextChanged);
             // 
@@ -166,9 +171,9 @@
             // btnModsDirectory
             // 
             this.btnModsDirectory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModsDirectory.Location = new System.Drawing.Point(721, 95);
+            this.btnModsDirectory.Location = new System.Drawing.Point(652, 95);
             this.btnModsDirectory.Name = "btnModsDirectory";
-            this.btnModsDirectory.Size = new System.Drawing.Size(24, 24);
+            this.btnModsDirectory.Size = new System.Drawing.Size(93, 24);
             this.btnModsDirectory.TabIndex = 18;
             this.btnModsDirectory.Text = "...";
             this.btnModsDirectory.UseVisualStyleBackColor = true;
@@ -177,12 +182,12 @@
             // txtbActionLog
             // 
             this.txtbActionLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbActionLog.Location = new System.Drawing.Point(321, 124);
+            this.txtbActionLog.Location = new System.Drawing.Point(321, 182);
             this.txtbActionLog.Multiline = true;
             this.txtbActionLog.Name = "txtbActionLog";
             this.txtbActionLog.ReadOnly = true;
             this.txtbActionLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtbActionLog.Size = new System.Drawing.Size(424, 289);
+            this.txtbActionLog.Size = new System.Drawing.Size(424, 546);
             this.txtbActionLog.TabIndex = 23;
             // 
             // btnUpdateMods
@@ -215,11 +220,51 @@
             this.btnDisableAll.UseVisualStyleBackColor = true;
             this.btnDisableAll.Click += new System.EventHandler(this.btnDisableAll_Click);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Location = new System.Drawing.Point(0, 728);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(749, 22);
+            this.statusStrip1.TabIndex = 27;
+            this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
+            // 
+            // btnLaunch
+            // 
+            this.btnLaunch.Location = new System.Drawing.Point(321, 124);
+            this.btnLaunch.Name = "btnLaunch";
+            this.btnLaunch.Size = new System.Drawing.Size(85, 50);
+            this.btnLaunch.TabIndex = 28;
+            this.btnLaunch.Text = "Launch Game";
+            this.btnLaunch.UseVisualStyleBackColor = true;
+            // 
+            // btnResetData
+            // 
+            this.btnResetData.Location = new System.Drawing.Point(230, 678);
+            this.btnResetData.Name = "btnResetData";
+            this.btnResetData.Size = new System.Drawing.Size(85, 50);
+            this.btnResetData.TabIndex = 29;
+            this.btnResetData.Text = "RESET DATA";
+            this.btnResetData.UseVisualStyleBackColor = true;
+            // 
+            // btnFetchUser
+            // 
+            this.btnFetchUser.Location = new System.Drawing.Point(576, 29);
+            this.btnFetchUser.Name = "btnFetchUser";
+            this.btnFetchUser.Size = new System.Drawing.Size(57, 46);
+            this.btnFetchUser.TabIndex = 30;
+            this.btnFetchUser.Text = "Fetch User";
+            this.btnFetchUser.UseVisualStyleBackColor = true;
+            this.btnFetchUser.Click += new System.EventHandler(this.btnFetchUser_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(757, 424);
+            this.ClientSize = new System.Drawing.Size(749, 750);
+            this.Controls.Add(this.btnResetData);
+            this.Controls.Add(this.btnLaunch);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnDisableAll);
             this.Controls.Add(this.btnEnableAll);
             this.Controls.Add(this.btnUpdateMods);
@@ -259,6 +304,10 @@
         private System.Windows.Forms.Button btnUpdateMods;
         private System.Windows.Forms.Button btnEnableAll;
         private System.Windows.Forms.Button btnDisableAll;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.Button btnLaunch;
+        private System.Windows.Forms.Button btnResetData;
+        private System.Windows.Forms.Button btnFetchUser;
     }
 }
 

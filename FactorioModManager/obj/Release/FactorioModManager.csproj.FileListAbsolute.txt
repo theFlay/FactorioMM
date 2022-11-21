@@ -23,3 +23,17 @@ C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioMod
 C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.csproj.CopyComplete
 C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.exe
 C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.pdb
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\bin\Release\FactorioModManager.exe.config
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\bin\Release\FactorioModManager.exe
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\bin\Release\FactorioModManager.pdb
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\bin\Release\Newtonsoft.Json.dll
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\bin\Release\Newtonsoft.Json.xml
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\obj\Release\FactorioModManager.csproj.AssemblyReference.cache
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\obj\Release\FactorioModManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\obj\Release\FactorioModManager.frmMain.resources
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\obj\Release\FactorioModManager.Properties.Resources.resources
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\obj\Release\FactorioModManager.csproj.GenerateResource.cache
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\obj\Release\FactorioModManager.csproj.CoreCompileInputs.cache
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\obj\Release\FactorioModManager.csproj.CopyComplete
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\obj\Release\FactorioModManager.exe
+C:\Users\Flay\Documents\GitHub\FactorioMM\FactorioModManager\obj\Release\FactorioModManager.pdb
