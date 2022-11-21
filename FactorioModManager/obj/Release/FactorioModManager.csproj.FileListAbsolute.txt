@@ -1,0 +1,25 @@
+C:\Users\Depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\bin\Release\FactorioModManager.exe.config
+C:\Users\Depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\bin\Release\FactorioModManager.exe
+C:\Users\Depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\bin\Release\FactorioModManager.pdb
+C:\Users\Depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\bin\Release\Newtonsoft.Json.dll
+C:\Users\Depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\bin\Release\Newtonsoft.Json.xml
+C:\Users\Depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.frmMain.resources
+C:\Users\Depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.Properties.Resources.resources
+C:\Users\Depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.csproj.GenerateResource.Cache
+C:\Users\Depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.exe
+C:\Users\Depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.pdb
+C:\Users\Depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.csprojResolveAssemblyReference.cache
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\bin\Release\FactorioModManager.exe.config
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\bin\Release\FactorioModManager.exe
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\bin\Release\FactorioModManager.pdb
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\bin\Release\Newtonsoft.Json.dll
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\bin\Release\Newtonsoft.Json.xml
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.csproj.AssemblyReference.cache
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.frmMain.resources
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.Properties.Resources.resources
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.csproj.GenerateResource.cache
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.csproj.CoreCompileInputs.cache
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.csproj.CopyComplete
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.exe
+C:\Users\Flay\Downloads\FactorioModManager_source\FactorioModManager\FactorioModManager\obj\Release\FactorioModManager.pdb

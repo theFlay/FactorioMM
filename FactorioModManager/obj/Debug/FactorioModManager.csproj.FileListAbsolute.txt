@@ -1,0 +1,11 @@
+c:\users\depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\bin\Debug\FactorioModManager.exe.config
+c:\users\depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\bin\Debug\FactorioModManager.exe
+c:\users\depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\bin\Debug\FactorioModManager.pdb
+c:\users\depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\obj\Debug\FactorioModManager.csprojResolveAssemblyReference.cache
+c:\users\depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\obj\Debug\FactorioModManager.Properties.Resources.resources
+c:\users\depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\obj\Debug\FactorioModManager.csproj.GenerateResource.Cache
+c:\users\depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\obj\Debug\FactorioModManager.exe
+c:\users\depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\obj\Debug\FactorioModManager.pdb
+c:\users\depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\obj\Debug\FactorioModManager.frmMain.resources
+c:\users\depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\bin\Debug\Newtonsoft.Json.dll
+c:\users\depth\documents\visual studio 2017\Projects\FactorioModManager\FactorioModManager\bin\Debug\Newtonsoft.Json.xml
